@@ -4,10 +4,10 @@
 
 @layer base {
   * {
-    --brand-primary-dark: 358, 83%, 33%;
-    --brand-primary-mid: 358, 77%, 49%;
-    --brand-primary-light: 357, 84%, 67%;
-    --brand-primary-lightest: 0, 100%, 92%;
+    --brand-primary-dark: 28, 84%, 33%;
+    --brand-primary-mid: 28, 84%, 46%;
+    --brand-primary-light: 28, 73%, 63%;
+    --brand-primary-lightest: 28, 72%, 79%;
 
     --brand-secondary-dark: 274, 37%, 32%;
     --brand-secondary-mid: 275, 37%, 50%;
@@ -218,4 +218,20 @@ input[type="range"]::-ms-track {
   background: hsl(var(--card));
   border-color: transparent;
   color: transparent;
+}
+
+.section-container {
+  padding-inline: 220px;
+}
+
+@media (max-width: 1280px) {
+  .section-container {
+    padding-inline: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding-inline: 20px;
+  }
 }
